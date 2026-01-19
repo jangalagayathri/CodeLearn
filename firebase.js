@@ -1,14 +1,15 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-firestore.js";
+import { firebaseConfig } from "./firebaseConfig.js";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyAL5d_s1suwynuNn-1BI1kGlkjj9fqAoiM",
-  authDomain: "codelearn-platform.firebaseapp.com",
-  projectId: "codelearn-platform",
-  storageBucket: "codelearn-platform.firebasestorage.app",
-  messagingSenderId: "970418070950",
-  appId: "1:970418070950:web:26b71ba71cac06a1d01b67",
+export const firebaseConfig = {
+  apiKey: "YOUR_FIREBASE_API_KEY",
+  authDomain: "your-project.firebaseapp.com",
+  projectId: "your-project-id",
+  storageBucket: "your-project.appspot.com",
+  messagingSenderId: "XXXX",
+  appId: "XXXX",
 };
 
 const app = initializeApp(firebaseConfig);
