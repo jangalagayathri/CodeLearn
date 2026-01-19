@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeLearn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CodeLearn</h1>
+    <!--Auth-->
+    <div id="auth">
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <div class="btn-group">
+        <button onclick="register()">Register</button>
+        <button onclick="login()" class="primary">Login</button>
+      </div>
+    </div>
+    <!--Editor card-->
+    <div id="editor" class="card editor" style="display: none">
+      <h2>Code Editor</h2>
+      <select id="language">
+        <option value="54" selected>C++</option>
+        <option value="62">Java</option>
+        <option value="71">Python</option>
+        <option value="50">C</option>
+      </select>
+
+      <textarea id="code" placeholder="Write your code here"></textarea>
+      <label for="stdin">Program Input:</label>
+      <input type="text" id="stdin" placeholder="e.g., 5 7" />
+
+      <button onclick="runcode()" class="primary run-btn">Run Code</button>
+      <pre id="output"></pre>
+    </div>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
