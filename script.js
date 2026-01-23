@@ -26,6 +26,7 @@ window.login = async () => {
 
   try {
     await signInWithEmailAndPassword(auth, email, password);
+    alert("Login successful");
   } catch (e) {
     alert(e.message);
   }
@@ -38,7 +39,6 @@ onAuthStateChanged(auth, (user) => {
     document.getElementById("editor").style.display = "block";
   }
 });
-const userInput = document.getElementById("stdin").value;
 
 // RUN CODE
 window.runcode = async () => {
